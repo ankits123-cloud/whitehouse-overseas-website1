@@ -1,21 +1,21 @@
 export function CountriesSection() {
   const countries = [
-    { name: "United Kingdom", flag: "🇬🇧" },
-    { name: "United States", flag: "🇺🇸" },
-    { name: "Canada", flag: "🇨🇦" },
-    { name: "Australia", flag: "🇦🇺" },
-    { name: "New Zealand", flag: "🇳🇿" },
-    { name: "Georgia", flag: "🇬🇪" },
-    { name: "Cyprus", flag: "🇨🇾" },
-    { name: "Latvia", flag: "🇱🇻" },
-    { name: "Lithuania", flag: "🇱🇹" },
+    { name: "Switzerland", flag: "🇨🇭" },
+    { name: "Italy", flag: "🇮🇹" },
+    { name: "Netherlands", flag: "🇳🇱" },
+    { name: "Germany", flag: "🇩🇪" },
+    { name: "Finland", flag: "🇫🇮" },
+    { name: "Greece", flag: "🇬🇷" },
+    { name: "Denmark", flag: "🇩🇰" },
+    { name: "France", flag: "🇫🇷" },
     { name: "Slovenia", flag: "🇸🇮" },
     { name: "Slovakia", flag: "🇸🇰" },
-    { name: "Germany", flag: "🇩🇪" },
-    { name: "Italy", flag: "🇮🇹" },
-    { name: "Finland", flag: "🇫🇮" },
-    { name: "Denmark", flag: "🇩🇰" },
-    { name: "Netherlands", flag: "🇳🇱" }
+    { name: "Lithuania", flag: "🇱🇹" },
+    { name: "Latvia", flag: "🇱🇻" },
+    { name: "Poland", flag: "🇵🇱" },
+    { name: "Cyprus", flag: "🇨🇾" },
+    { name: "Georgia", flag: "🇬🇪" },
+    { name: "Singapore", flag: "🇸🇬" },
   ];
 
   return (

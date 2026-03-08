@@ -5,102 +5,151 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ heroImage }: HeroSectionProps) {
+
   const scrollToContact = () => {
     const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    if (element) element.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section className="relative pt-28 pb-16 bg-gradient-to-br from-[#0f1c3f] via-[#1a2b5a] to-[#0f1c3f] overflow-hidden">
-      {/* Decorative Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#dc2626] rounded-full blur-3xl"></div>
+    <section className="relative pt-28 pb-20 bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#020617] text-white overflow-hidden">
+
+      {/* background glow */}
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-24 left-10 w-72 h-72 bg-indigo-500 blur-3xl rounded-full"></div>
+        <div className="absolute bottom-24 right-10 w-96 h-96 bg-purple-500 blur-3xl rounded-full"></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="text-white space-y-6">
-            <div className="inline-block bg-[#dc2626] px-4 py-2 rounded-full text-sm mb-4">
-              ✈️ Your Gateway to International Education
-            </div>
-            
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight" style={{ fontWeight: 700 }}>
-              Turn Your Study Abroad Dream Into{" "}
-              <span className="text-[#dc2626]">Reality</span>
-            </h1>
-            
-            <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
-              Admission + Visa + Complete Guidance — All in One Place
-            </p>
-            
-            <div className="flex flex-wrap gap-4 text-sm sm:text-base">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#dc2626]" />
-                <span>Europe Study Experts</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-[#dc2626]" />
-                <span>High Visa Success Rate</span>
-              </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+          {/* LEFT CONTENT */}
+
+          <div className="space-y-6">
+
+            <div className="inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
+              ✈ Your Gateway to International Education
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-4 pt-4">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+
+              Turn Your Study Abroad Dream Into
+
+              <span className="block text-indigo-400">
+                Reality
+              </span>
+
+            </h1>
+
+            <p className="text-lg text-gray-300 max-w-xl">
+              Admission, Visa and complete guidance — everything you need to
+              start your international education journey.
+            </p>
+
+            {/* FEATURES */}
+
+            <div className="flex flex-wrap gap-5 text-gray-300">
+
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-indigo-400" />
+                Europe Study Experts
+              </div>
+
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-indigo-400" />
+                High Visa Success Rate
+              </div>
+
+            </div>
+
+            {/* BUTTONS */}
+
+            <div className="flex gap-4 pt-4">
+
               <button
                 onClick={scrollToContact}
-                className="bg-[#dc2626] text-white px-8 py-4 rounded-lg hover:bg-[#b91c1c] transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
-                style={{ fontWeight: 600 }}
+                className="bg-indigo-500 hover:bg-indigo-600 px-8 py-4 rounded-lg flex items-center gap-2 transition shadow-lg"
               >
                 Apply Now
-                <ArrowRight className="w-5 h-5" />
+                <ArrowRight size={18} />
               </button>
+
               <button
                 onClick={scrollToContact}
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-[#0f1c3f] transition-all flex items-center gap-2"
-                style={{ fontWeight: 600 }}
+                className="border border-white/30 px-8 py-4 rounded-lg hover:bg-white hover:text-black transition"
               >
-                Book Free Consultation
+                Free Consultation
               </button>
+
             </div>
 
-            {/* Trust Badges */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-8 border-t border-white/20">
-              <div className="text-center sm:text-left">
-                <p className="text-2xl text-[#dc2626]" style={{ fontWeight: 700 }}>₹2 Lakhs+</p>
-                <p className="text-sm text-gray-300">Packages Start From</p>
+            {/* TRUST STATS */}
+
+            <div className="grid grid-cols-3 gap-6 pt-10 border-t border-white/20">
+
+              <div>
+                <p className="text-2xl font-bold text-indigo-400">
+                  ₹2L+
+                </p>
+                <p className="text-sm text-gray-400">
+                  Packages Start
+                </p>
               </div>
-              <div className="text-center sm:text-left">
-                <p className="text-2xl text-[#dc2626]" style={{ fontWeight: 700 }}>No Advance</p>
-                <p className="text-sm text-gray-300">Payment Required</p>
+
+              <div>
+                <p className="text-2xl font-bold text-indigo-400">
+                  No Advance
+                </p>
+                <p className="text-sm text-gray-400">
+                  Payment
+                </p>
               </div>
-              <div className="text-center sm:text-left">
-                <p className="text-2xl text-[#dc2626]" style={{ fontWeight: 700 }}>Pay After</p>
-                <p className="text-sm text-gray-300">Visa Approval</p>
+
+              <div>
+                <p className="text-2xl font-bold text-indigo-400">
+                  Pay After
+                </p>
+                <p className="text-sm text-gray-400">
+                  Visa Approval
+                </p>
               </div>
+
             </div>
+
           </div>
 
-          {/* Right Image */}
+
+          {/* RIGHT IMAGE */}
+
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+
+            <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+
               <img
-                src={heroImage}
-                alt="Happy International Student"
-                className="w-full h-[500px] object-cover"
+                src="./11.png"
+                alt="Students"
+                className="w-full h-[520px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0f1c3f]/50 to-transparent"></div>
+
             </div>
-            
-            {/* Floating Badge */}
-            <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-2xl">
-              <p className="text-4xl text-[#0f1c3f] mb-1" style={{ fontWeight: 700 }}>500+</p>
-              <p className="text-sm text-gray-600">Visa Approvals</p>
+
+            {/* floating card */}
+
+            <div className="absolute -bottom-6 -left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+
+              <p className="text-3xl font-bold text-indigo-600">
+                500+
+              </p>
+
+              <p className="text-sm text-gray-600">
+                Visa Approvals
+              </p>
+
             </div>
+
           </div>
+
         </div>
       </div>
     </section>

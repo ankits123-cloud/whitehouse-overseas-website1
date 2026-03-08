@@ -28,83 +28,148 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div className="flex items-center justify-between">
-          {/* Logo */}
+
+          {/* LOGO */}
           <div className="flex items-center gap-3">
-  <img src="/whitehouse logo.png" alt="logo" className="h-12 w-auto" />
 
-  <div className="leading-tight">
-    <p className="font-bold text-lg text-gray-900">
-      White House Overseas
-    </p>
-    <p className="text-sm text-red-500">
-      Study Abroad Consultancy
-    </p>
-  </div>
-</div>
+            <img
+              src="/whitehouse logo.png"
+              alt="logo"
+              className="h-16 w-auto mix-blend-multiply"
+            />
 
-          {/* Desktop Navigation */}
+            <div className="leading-tight">
+
+              <p className="text-2xl font-extrabold text-gray-900">
+                White House Overseas
+              </p>
+
+              <p className="text-xs text-gray-500 tracking-wide">
+                Study Abroad Consultancy
+              </p>
+
+            </div>
+          </div>
+
+          {/* DESKTOP MENU */}
+
           <div className="hidden md:flex items-center space-x-8">
-            <button onClick={() => scrollToSection("destinations")} className="text-[#0f1c3f] hover:text-[#dc2626] transition-colors">
+
+            <button
+              onClick={() => scrollToSection("destinations")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
               Destinations
             </button>
-            <button onClick={() => scrollToSection("services")} className="text-[#0f1c3f] hover:text-[#dc2626] transition-colors">
+
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
               Services
             </button>
-            <button onClick={() => scrollToSection("process")} className="text-[#0f1c3f] hover:text-[#dc2626] transition-colors">
+
+            <button
+              onClick={() => scrollToSection("process")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
               Process
             </button>
-            <button onClick={() => scrollToSection("testimonials")} className="text-[#0f1c3f] hover:text-[#dc2626] transition-colors">
+
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
               Success Stories
             </button>
-            <button onClick={() => scrollToSection("contact")} className="text-[#0f1c3f] hover:text-[#dc2626] transition-colors">
+
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
               Contact
             </button>
+
             <a
               href="tel:7053791203"
-              className="flex items-center gap-2 bg-[#dc2626] text-white px-6 py-2 rounded-lg hover:bg-[#b91c1c] transition-colors shadow-md"
+              className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
             >
               <Phone className="w-4 h-4" />
               Call Now
             </a>
+
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* MOBILE BUTTON */}
+
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-[#0f1c3f]"
+            className="md:hidden text-gray-800"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
+
         </div>
 
-        {/* Mobile Menu */}
+        {/* MOBILE MENU */}
+
         {mobileMenuOpen && (
+
           <div className="md:hidden mt-4 pb-4 space-y-3">
-            <button onClick={() => scrollToSection("destinations")} className="block w-full text-left py-2 text-[#0f1c3f] hover:text-[#dc2626]">
+
+            <button
+              onClick={() => scrollToSection("destinations")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
               Destinations
             </button>
-            <button onClick={() => scrollToSection("services")} className="block w-full text-left py-2 text-[#0f1c3f] hover:text-[#dc2626]">
+
+            <button
+              onClick={() => scrollToSection("services")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
               Services
             </button>
-            <button onClick={() => scrollToSection("process")} className="block w-full text-left py-2 text-[#0f1c3f] hover:text-[#dc2626]">
+
+            <button
+              onClick={() => scrollToSection("process")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
               Process
             </button>
-            <button onClick={() => scrollToSection("testimonials")} className="block w-full text-left py-2 text-[#0f1c3f] hover:text-[#dc2626]">
+
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
               Success Stories
             </button>
-            <button onClick={() => scrollToSection("contact")} className="block w-full text-left py-2 text-[#0f1c3f] hover:text-[#dc2626]">
+
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
               Contact
             </button>
+
             <a
               href="tel:7053791203"
-              className="flex items-center justify-center gap-2 bg-[#dc2626] text-white px-6 py-2 rounded-lg hover:bg-[#b91c1c] transition-colors shadow-md"
+              className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
             >
               <Phone className="w-4 h-4" />
               Call Now
             </a>
+
           </div>
+
         )}
+
       </div>
     </nav>
   );
