@@ -26,7 +26,7 @@ return ( <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3
         <img
           src="/whitehouse logo.png"
           alt="logo"
-          className="h-24 md:h-25 w-auto"
+          className="h-20 md:h-23 w-auto"
         />
 
         <div className="leading-tight">
