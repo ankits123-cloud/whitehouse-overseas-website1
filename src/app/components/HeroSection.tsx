@@ -26,20 +26,17 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
           {/* LEFT CONTENT */}
 
-          <div className="space-y-6">
+          <div className="space-y-6 order-2 lg:order-1">
 
             <div className="inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
               ✈ Your Gateway to International Education
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-
               Turn Your Study Abroad Dream Into
-
               <span className="block text-indigo-400">
                 Reality
               </span>
-
             </h1>
 
             <p className="text-lg text-gray-300 max-w-xl">
@@ -122,14 +119,14 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
           {/* RIGHT IMAGE */}
 
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
 
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
 
               <img
                 src="./11.png"
                 alt="Students"
-                className="w-full h-[520px] object-cover"
+                className="w-full h-[520px] object-cover hover:scale-105 transition duration-500"
               />
 
             </div>
@@ -151,6 +148,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
           </div>
 
         </div>
+
       </div>
     </section>
   );

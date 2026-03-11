@@ -5,7 +5,7 @@ import { WhyChooseUs } from "./components/WhyChooseUs";
 import { ProcessSection } from "./components/ProcessSection";
 import { ServicesSection } from "./components/ServicesSection";
 import { PackagesSection } from "./components/PackagesSection";
-import { CountriesSection } from "./components/CountriesSection";
+
 import { TestimonialsSection } from "./components/TestimonialsSection";
 import { ContactSection } from "./components/ContactSection";
 import { CTAStrip } from "./components/CTAStrip";
@@ -54,7 +54,7 @@ export default function App() {
       <CTAStrip text="Secure Your Future in Europe" buttonText="Book Consultation" />
 
       {/* Countries Section */}
-      <CountriesSection />
+      
 
       {/* Testimonials Section */}
       <TestimonialsSection 

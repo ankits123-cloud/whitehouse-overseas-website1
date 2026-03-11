@@ -2,168 +2,172 @@ import { useState } from "react";
 import { Phone, Menu, X } from "lucide-react";
 
 export function Navbar() {
-const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-const scrollToSection = (id: string) => {
-const element = document.getElementById(id);
-if (element) {
-element.scrollIntoView({ behavior: "smooth" });
-setMobileMenuOpen(false);
-}
-};
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-return ( <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3">
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setMobileMenuOpen(false);
+    }
+  };
+
+  return (
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div className="flex items-center justify-between">
+
+          {/* LOGO */}
+
+          <div className="flex items-center gap-3">
+
+            <img
+              src="/whitehouse logo.png"
+              alt="logo"
+              className="h-14 md:h-20 w-auto"
+            />
+
+            <div className="leading-tight">
+
+              <p className="text-lg md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
+                White House Overseas
+              </p>
+
+              <p className="text-xs text-gray-500 tracking-wide">
+                Study Abroad Consultancy
+              </p>
+
+            </div>
+
+          </div>
 
 
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* DESKTOP MENU */}
 
-    <div className="flex items-center justify-between">
+          <div className="hidden md:flex items-center space-x-8">
 
-      {/* LOGO */}
+            <button
+              onClick={() => scrollToSection("destinations")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
+              Destinations
+            </button>
 
-      <div className="flex items-center gap-3">
+            <button
+              onClick={() => scrollToSection("services")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
+              Services
+            </button>
 
-        <img
-          src="/whitehouse logo.png"
-          alt="logo"
-          className="h-20 md:h-23 w-auto"
-        />
+            <button
+              onClick={() => scrollToSection("process")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
+              Process
+            </button>
 
-        <div className="leading-tight">
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
+              Success Stories
+            </button>
 
-          <p className="text-xl md:text-2xl font-extrabold text-gray-900">
-            White House Overseas
-          </p>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="text-gray-700 hover:text-indigo-600 transition font-medium"
+            >
+              Contact
+            </button>
 
-          <p className="text-xs text-gray-500 tracking-wide">
-            Study Abroad Consultancy
-          </p>
+            <a
+              href="tel:7053791203"
+              className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
+            >
+              <Phone className="w-4 h-4" />
+              Call Now
+            </a>
+
+          </div>
+
+
+          {/* MOBILE MENU BUTTON */}
+
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden text-gray-800"
+          >
+
+            {mobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+
+          </button>
 
         </div>
 
-      </div>
 
-      {/* DESKTOP MENU */}
+        {/* MOBILE MENU */}
 
-      <div className="hidden md:flex items-center space-x-8">
+        {mobileMenuOpen && (
 
-        <button
-          onClick={() => scrollToSection("destinations")}
-          className="text-gray-700 hover:text-indigo-600 transition font-medium"
-        >
-          Destinations
-        </button>
+          <div className="md:hidden mt-4 pb-4 space-y-3">
 
-        <button
-          onClick={() => scrollToSection("services")}
-          className="text-gray-700 hover:text-indigo-600 transition font-medium"
-        >
-          Services
-        </button>
+            <button
+              onClick={() => scrollToSection("destinations")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              Destinations
+            </button>
 
-        <button
-          onClick={() => scrollToSection("process")}
-          className="text-gray-700 hover:text-indigo-600 transition font-medium"
-        >
-          Process
-        </button>
+            <button
+              onClick={() => scrollToSection("services")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              Services
+            </button>
 
-        <button
-          onClick={() => scrollToSection("testimonials")}
-          className="text-gray-700 hover:text-indigo-600 transition font-medium"
-        >
-          Success Stories
-        </button>
+            <button
+              onClick={() => scrollToSection("process")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              Process
+            </button>
 
-        <button
-          onClick={() => scrollToSection("contact")}
-          className="text-gray-700 hover:text-indigo-600 transition font-medium"
-        >
-          Contact
-        </button>
+            <button
+              onClick={() => scrollToSection("testimonials")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              Success Stories
+            </button>
 
-        <a
-          href="tel:7053791203"
-          className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
-        >
-          <Phone className="w-4 h-4" />
-          Call Now
-        </a>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
+            >
+              Contact
+            </button>
 
-      </div>
+            <a
+              href="tel:7053791203"
+              className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
+            >
+              <Phone className="w-4 h-4" />
+              Call Now
+            </a>
 
-      {/* MOBILE MENU BUTTON */}
+          </div>
 
-      <button
-        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-        className="md:hidden text-gray-800"
-      >
-        {mobileMenuOpen ? (
-          <X className="w-6 h-6" />
-        ) : (
-          <Menu className="w-6 h-6" />
         )}
-      </button>
-
-    </div>
-
-    {/* MOBILE MENU */}
-
-    {mobileMenuOpen && (
-
-      <div className="md:hidden mt-4 pb-4 space-y-3">
-
-        <button
-          onClick={() => scrollToSection("destinations")}
-          className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-        >
-          Destinations
-        </button>
-
-        <button
-          onClick={() => scrollToSection("services")}
-          className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-        >
-          Services
-        </button>
-
-        <button
-          onClick={() => scrollToSection("process")}
-          className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-        >
-          Process
-        </button>
-
-        <button
-          onClick={() => scrollToSection("testimonials")}
-          className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-        >
-          Success Stories
-        </button>
-
-        <button
-          onClick={() => scrollToSection("contact")}
-          className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-        >
-          Contact
-        </button>
-
-        <a
-          href="tel:7053791203"
-          className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
-        >
-          <Phone className="w-4 h-4" />
-          Call Now
-        </a>
 
       </div>
 
-    )}
-
-  </div>
-
-</nav>
-
-
-);
+    </nav>
+  );
 }
