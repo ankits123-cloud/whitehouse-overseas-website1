@@ -22,7 +22,7 @@ export function Navbar() {
 
           {/* LOGO */}
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center flex-1">
 
             <img
               src="/whitehouse logo.png"
@@ -30,7 +30,7 @@ export function Navbar() {
               className="h-14 md:h-20 w-auto"
             />
 
-            <div className="leading-tight">
+            <div className="leading-tight ml-2">
 
               <p className="text-lg md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
                 White House Overseas
@@ -99,7 +99,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-gray-800"
+            className="md:hidden text-gray-800 ml-3"
           >
 
             {mobileMenuOpen ? (
