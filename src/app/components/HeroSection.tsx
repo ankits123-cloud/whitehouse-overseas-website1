@@ -26,7 +26,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
           {/* LEFT CONTENT */}
 
-        
+          <div className="space-y-6 order-2 lg:order-1">
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
               Turn Your Study Abroad Dream Into
@@ -124,15 +124,18 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
                 alt="Students"
                 className="w-full h-[520px] object-cover hover:scale-105 transition duration-500"
               />
-  <p className="text-gray-300 text-sm mt-3">
-    Your Gateway To International Education
-  </p>
 
             </div>
 
+            {/* Gateway Text */}
+
+            <p className="text-gray-300 text-sm mt-4">
+              Your Gateway To International Education
+            </p>
+
             {/* floating card */}
 
-            <div className="absolute -bottom-24 -left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+            <div className="absolute bottom-12 left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
 
               <p className="text-3xl font-bold text-indigo-600">
                 500+
