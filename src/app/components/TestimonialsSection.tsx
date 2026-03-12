@@ -35,7 +35,7 @@ export function TestimonialsSection() {
     },
     {
       name: "Rohit Kumar",
-      destination: "Poland",
+      destination: "Italy",
       rating: 5,
       text: "Highly recommended consultancy for study abroad. The process was smooth and well managed."
     }
