@@ -35,7 +35,7 @@ export function Navbar() {
               <p className="text-lg md:text-3xl font-extrabold text-gray-900 whitespace-nowrap">
                 White House Overseas
               </p>
-<p className="text-[10px] text-gray-500 tracking-wide -ml-2">
+<p className="text-[10px] text-gray-500 tracking-wide -ml-1">
                 Study Abroad Consultancy
               </p>
 

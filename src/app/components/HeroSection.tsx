@@ -128,12 +128,15 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
                 alt="Students"
                 className="w-full h-[520px] object-cover hover:scale-105 transition duration-500"
               />
+  <p className="text-gray-300 text-sm mt-3">
+    Your Gateway To Global Education
+  </p>
 
             </div>
 
             {/* floating card */}
 
-            <div className="absolute -bottom-6 -left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+            <div className="absolute -bottom-20 -left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
 
               <p className="text-3xl font-bold text-indigo-600">
                 500+
