@@ -57,17 +57,9 @@ export function WhyChooseUs() {
 
         <div className="text-center mb-16">
 
-          <div className="inline-block bg-[#dc2626]/10 px-4 py-2 rounded-full text-[#dc2626] text-sm mb-4 font-semibold">
+          <h2 className="text-5xl sm:text-6xl text-[#0f1c3f] font-bold">
             Why Choose Us
-          </div>
-
-          <h2 className="text-4xl sm:text-5xl text-[#0f1c3f] mb-4 font-bold">
-            Why Students Trust Us
           </h2>
-
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We provide honest guidance, affordable study options and complete support throughout your journey.
-          </p>
 
         </div>
 
