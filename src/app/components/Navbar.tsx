@@ -29,17 +29,15 @@ export function Navbar() {
               alt="logo"
               className="h-16 md:h-24 w-auto -ml-4"
             />
+<div className="leading-tight ml-1">
+  <p className="text-lg md:text-3xl font-extrabold text-gray-900 whitespace-nowrap">
+    White House Overseas
+  </p>
 
-            <div className="leading-tight ml-1">
-
-              <p className="text-lg md:text-3xl font-extrabold text-gray-900 whitespace-nowrap">
-                White House Overseas
-              </p>
-<p className="text-[10px] text-gray-500 tracking-wide -ml-3">
-                Study Abroad Consultancy
-              </p>
-
-            </div>
+  <p className="text-[10px] text-gray-500 tracking-wide text-right pr-1">
+    Study Abroad Consultancy
+  </p>
+</div>
 
           </div>
 
