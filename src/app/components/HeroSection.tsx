@@ -129,13 +129,13 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
             {/* Gateway Text */}
 
-            <p className="text-gray-300 text-sm mt-4">
+            <p className="text-gray-300 text-base mt-4">
               Your Gateway To International Education
             </p>
 
             {/* floating card */}
 
-            <div className="absolute bottom-9 left-4 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+            <div className="absolute bottom-36 left-4 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
 
               <p className="text-3xl font-bold text-indigo-600">
                 500+
