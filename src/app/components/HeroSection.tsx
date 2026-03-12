@@ -1,173 +1,68 @@
-import { useState } from "react";
-import { Phone, Menu, X } from "lucide-react";
+import { Phone } from "lucide-react";
 
-export function Navbar() {
-
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setMobileMenuOpen(false);
-    }
-  };
-
+export function HeroSection() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md py-3">
+    <section className="pt-28 pb-20 bg-[#0f1c3f] text-white">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        <div className="flex items-center justify-between">
+        <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          {/* LOGO */}
+          {/* LEFT CONTENT */}
 
-          <div className="flex items-center">
+          <div>
 
-            <img
-              src="/whitehouse logo.png"
-              alt="logo"
-              className="h-16 md:h-20 w-auto ml-1"
-            />
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+              Study Abroad <br />
+              With <span className="text-[#dc2626]">Trusted Guidance</span>
+            </h1>
 
-            <div className="leading-tight ml-2">
+            <p className="text-gray-300 text-lg mb-8">
+              White House Overseas helps students secure admissions in top
+              European universities with affordable programs and complete
+              visa support.
+            </p>
 
-              <p className="text-lg md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
-                White House Overseas
-              </p>
+            <div className="flex flex-wrap gap-4">
 
-              <p className="text-[11px] text-gray-500 tracking-wide text-right">
-                Study Abroad Consultancy
-              </p>
+              <a
+                href="tel:7053791203"
+                className="flex items-center gap-2 bg-[#dc2626] px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition"
+              >
+                <Phone className="w-5 h-5" />
+                Call Now
+              </a>
+
+              <button
+                onClick={() => {
+                  const el = document.getElementById("destinations");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#0f1c3f] transition"
+              >
+                Explore Destinations
+              </button>
 
             </div>
 
           </div>
 
+          {/* RIGHT IMAGE */}
 
-          {/* DESKTOP MENU */}
+          <div className="flex justify-center">
 
-          <div className="hidden md:flex items-center space-x-8">
-
-            <button
-              onClick={() => scrollToSection("destinations")}
-              className="text-gray-700 hover:text-indigo-600 transition font-medium"
-            >
-              Destinations
-            </button>
-
-            <button
-              onClick={() => scrollToSection("services")}
-              className="text-gray-700 hover:text-indigo-600 transition font-medium"
-            >
-              Services
-            </button>
-
-            <button
-              onClick={() => scrollToSection("process")}
-              className="text-gray-700 hover:text-indigo-600 transition font-medium"
-            >
-              Process
-            </button>
-
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="text-gray-700 hover:text-indigo-600 transition font-medium"
-            >
-              Success Stories
-            </button>
-
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="text-gray-700 hover:text-indigo-600 transition font-medium"
-            >
-              Contact
-            </button>
-
-            <a
-              href="tel:7053791203"
-              className="flex items-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
+            <img
+              src="/11.png"
+              alt="Study Abroad"
+              className="w-full max-w-md"
+            />
 
           </div>
-
-
-          {/* MOBILE MENU BUTTON */}
-
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-gray-800"
-          >
-
-            {mobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-
-          </button>
 
         </div>
 
-
-        {/* MOBILE MENU */}
-
-        {mobileMenuOpen && (
-
-          <div className="md:hidden mt-4 pb-4 space-y-3">
-
-            <button
-              onClick={() => scrollToSection("destinations")}
-              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Destinations
-            </button>
-
-            <button
-              onClick={() => scrollToSection("services")}
-              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Services
-            </button>
-
-            <button
-              onClick={() => scrollToSection("process")}
-              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Process
-            </button>
-
-            <button
-              onClick={() => scrollToSection("testimonials")}
-              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Success Stories
-            </button>
-
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="block w-full text-left py-2 text-gray-700 hover:text-indigo-600 font-medium"
-            >
-              Contact
-            </button>
-
-            <a
-              href="tel:7053791203"
-              className="flex items-center justify-center gap-2 bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition shadow-md font-semibold"
-            >
-              <Phone className="w-4 h-4" />
-              Call Now
-            </a>
-
-          </div>
-
-        )}
-
       </div>
 
-    </nav>
+    </section>
   );
 }
