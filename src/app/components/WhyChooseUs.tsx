@@ -58,7 +58,7 @@ export function WhyChooseUs() {
         <div className="text-center mb-16">
 
           <h2 className="text-5xl sm:text-6xl text-[#0f1c3f] font-bold">
-            Why Choose Us
+            Why Us
           </h2>
 
         </div>
