@@ -27,16 +27,16 @@ export function Navbar() {
             <img
               src="/whitehouse logo.png"
               alt="logo"
-              className="h-14 md:h-20 w-auto"
+              className="h-20 md:h-24 w-auto"
             />
 
-            <div className="leading-tight ml-2">
+            <div className="leading-tight ml-2 flex-1">
 
-              <p className="text-lg md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
+              <p className="text-2xl md:text-3xl font-extrabold text-gray-900 whitespace-nowrap">
                 White House Overseas
               </p>
 
-              <p className="text-xs text-gray-500 tracking-wide">
+              <p className="text-xs text-gray-500 tracking-wide ml-24 md:ml-20">
                 Study Abroad Consultancy
               </p>
 
@@ -99,7 +99,7 @@ export function Navbar() {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden text-gray-800 ml-3"
+            className="md:hidden text-gray-800 ml-2 flex-shrink-0"
           >
 
             {mobileMenuOpen ? (
