@@ -22,21 +22,21 @@ export function Navbar() {
 
           {/* LOGO */}
 
-          <div className="flex items-center flex-1">
+          <div className="flex items-center flex-1 justify-start gap-2">
 
             <img
               src="/whitehouse logo.png"
               alt="logo"
-              className="h-14 md:h-20 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
 
-            <div className="leading-tight ml-2">
+            <div className="leading-tight">
 
-              <p className="text-lg md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
+              <p className="text-[22px] md:text-2xl font-extrabold text-gray-900 whitespace-nowrap">
                 White House Overseas
               </p>
 
-              <p className="text-xs text-gray-500 tracking-wide">
+              <p className="text-xs text-gray-500 tracking-wide ml-[72px]">
                 Study Abroad Consultancy
               </p>
 
