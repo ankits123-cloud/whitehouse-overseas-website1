@@ -28,7 +28,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
           <div className="space-y-6 order-2 lg:order-1">
 
-            <div className="inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
+            <div className="hidden lg:inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
               ✈ Your Gateway to International Education
             </div>
 
@@ -119,7 +119,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
           {/* RIGHT IMAGE */}
 
-          <div className="relative order-1 lg:order-2">
+          <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
 
             <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
 
@@ -133,7 +133,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
             {/* floating card */}
 
-            <div className="absolute -bottom-6 -left-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+            <div className="absolute -bottom-2 -left-6 md:-bottom-6 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
 
               <p className="text-3xl font-bold text-indigo-600">
                 500+
@@ -143,6 +143,13 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
                 Visa Approvals
               </p>
 
+            </div>
+
+            {/* Mobile gateway text below image */}
+            <div className="lg:hidden text-center mt-4">
+              <div className="inline-block bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm">
+                ✈ Your Gateway to International Education
+              </div>
             </div>
 
           </div>
