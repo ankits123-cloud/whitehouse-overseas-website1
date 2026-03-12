@@ -135,7 +135,7 @@ export function HeroSection({ heroImage }: HeroSectionProps) {
 
             {/* floating card */}
 
-            <div className="absolute left-4 top-[55%] -translate-y-1/2 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
+            <div className="absolute left-4 top-[70%] -translate-y-1/2 bg-white text-black px-6 py-5 rounded-xl shadow-xl">
 
   <p className="text-3xl font-bold text-indigo-600">
     500+
