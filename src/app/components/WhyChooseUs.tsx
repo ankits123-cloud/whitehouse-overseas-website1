@@ -1,114 +1,131 @@
-import { 
-  FileCheck, 
-  Users, 
-  MessageSquare, 
-  Eye, 
-  IndianRupee, 
-  UserCheck, 
-  ClipboardList, 
+import {
   ShieldCheck,
-  Languages
+  Eye,
+  IndianRupee,
+  GraduationCap,
+  UserCheck,
+  Languages,
+  Plane
 } from "lucide-react";
 
 export function WhyChooseUs() {
+
   const features = [
     {
-      icon: FileCheck,
-      title: "Complete Admission + Visa Support",
-      description: "End-to-end assistance for university admission and visa processing"
-    },
-    {
-      icon: ClipboardList,
-      title: "Expert Documentation Guidance",
-      description: "Professional help with all required documents and paperwork"
-    },
-    {
-      icon: MessageSquare,
-      title: "Interview Preparation",
-      description: "Mock interviews and coaching to ace your visa interview"
+      icon: ShieldCheck,
+      title: "No Advance Payment",
+      description: "Pay after confirmation for complete peace of mind."
     },
     {
       icon: Eye,
       title: "Transparent Process",
-      description: "Clear communication at every step with no hidden surprises"
+      description: "Clear steps and honest guidance at every stage."
     },
     {
       icon: IndianRupee,
-      title: "Affordable Packages",
-      description: "Competitive pricing with flexible payment options"
+      title: "No Hidden Charges",
+      description: "What we commit is exactly what you pay."
+    },
+    {
+      icon: GraduationCap,
+      title: "Low Budget Study Options",
+      description: "Affordable study abroad programs available."
     },
     {
       icon: UserCheck,
-      title: "Dedicated Case Manager",
-      description: "Personal advisor assigned to guide you throughout"
-    },
-    {
-      icon: Users,
-      title: "Step-by-Step Assistance",
-      description: "Comprehensive support from application to departure"
-    },
-    {
-      icon: ShieldCheck,
-      title: "No Advance Payment",
-      description: "Payment only after visa approval - your security matters"
+      title: "Weak Profiles Accepted",
+      description: "Solutions available even for gap or low percentage students."
     },
     {
       icon: Languages,
-      title: "Free Language Classes",
-      description: "Complimentary language training till visa approval"
+      title: "With or Without IELTS",
+      description: "Multiple university options based on your profile."
+    },
+    {
+      icon: Plane,
+      title: "Pre & Post Departure Support",
+      description: "Full assistance before and after reaching abroad."
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
+
+        {/* Header */}
+
         <div className="text-center mb-16">
-          <div className="inline-block bg-[#dc2626]/10 px-4 py-2 rounded-full text-[#dc2626] text-sm mb-4" style={{ fontWeight: 600 }}>
+
+          <div className="inline-block bg-[#dc2626]/10 px-4 py-2 rounded-full text-[#dc2626] text-sm mb-4 font-semibold">
             Why Choose Us
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-[#0f1c3f] mb-4" style={{ fontWeight: 700 }}>
-            Your Trusted Study Abroad Partner
+
+          <h2 className="text-4xl sm:text-5xl text-[#0f1c3f] mb-4 font-bold">
+            Why Students Trust Us
           </h2>
+
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            We provide comprehensive support to make your international education journey smooth and successful
+            We provide honest guidance, affordable study options and complete support throughout your journey.
           </p>
+
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+
+        {/* Features */}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {features.map((feature, index) => {
+
             const Icon = feature.icon;
+
             return (
               <div
                 key={index}
-                className="group p-6 rounded-xl hover:bg-gray-50 transition-all duration-300 border border-transparent hover:border-[#dc2626]/20 hover:shadow-lg"
+                className="bg-white rounded-xl p-7 shadow-md hover:shadow-xl transition border border-gray-100"
               >
-                <div className="w-14 h-14 bg-[#dc2626]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#dc2626] transition-colors">
-                  <Icon className="w-7 h-7 text-[#dc2626] group-hover:text-white transition-colors" />
+
+                <div className="w-14 h-14 bg-[#dc2626]/10 rounded-lg flex items-center justify-center mb-4">
+                  <Icon className="w-7 h-7 text-[#dc2626]" />
                 </div>
-                <h3 className="text-xl text-[#0f1c3f] mb-2" style={{ fontWeight: 600 }}>
+
+                <h3 className="text-xl text-[#0f1c3f] mb-2 font-semibold">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+
+                <p className="text-gray-600 leading-relaxed text-[15px]">
                   {feature.description}
                 </p>
+
               </div>
             );
+
           })}
+
         </div>
 
-        {/* Quote Section */}
-        <div className="relative mt-16">
-          <div className="bg-gradient-to-r from-[#0f1c3f] to-[#1a2b5a] rounded-2xl p-8 sm:p-12 text-center shadow-xl">
-            <div className="text-6xl text-[#dc2626] mb-4">"</div>
-            <p className="text-xl sm:text-2xl text-white mb-4 max-w-3xl mx-auto leading-relaxed" style={{ fontWeight: 500 }}>
-              From counselling to visa approval — we stay with you
+
+        {/* Bottom Quote */}
+
+        <div className="mt-16 text-center">
+
+          <div className="bg-[#0f1c3f] text-white rounded-xl px-8 py-10">
+
+            <p className="text-2xl font-semibold mb-2">
+              From Counselling to Visa Approval
             </p>
-            <div className="w-24 h-1 bg-[#dc2626] mx-auto"></div>
+
+            <p className="text-gray-300">
+              We stay with you at every step of your study abroad journey.
+            </p>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
   );
 }

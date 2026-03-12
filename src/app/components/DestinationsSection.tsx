@@ -3,16 +3,24 @@ import { GraduationCap, Briefcase, Globe, CheckCircle } from "lucide-react";
 export function DestinationsSection() {
 
   const countries = [
-    { name: "Switzerland", flag: "🇨🇭" },
-    { name: "Italy", flag: "🇮🇹" },
-    { name: "Netherlands", flag: "🇳🇱" },
-    { name: "Germany", flag: "🇩🇪" },
-    { name: "Finland", flag: "🇫🇮" },
-    { name: "Greece", flag: "🇬🇷" },
-    { name: "Denmark", flag: "🇩🇰" },
-    { name: "France", flag: "🇫🇷" },
-    { name: "Slovenia", flag: "🇸🇮" }
-  ];
+  { name: "Germany", flag: "🇩🇪" },
+  { name: "Finland", flag: "🇫🇮" },
+  { name: "Netherlands", flag: "🇳🇱" },
+  { name: "Georgia", flag: "🇬🇪" },
+  { name: "Cyprus", flag: "🇨🇾" },
+  { name: "Latvia", flag: "🇱🇻" },
+  { name: "Lithuania", flag: "🇱🇹" },
+  { name: "Slovenia", flag: "🇸🇮" },
+  { name: "Slovakia", flag: "🇸🇰" },
+  { name: "Italy", flag: "🇮🇹" },
+  { name: "Switzerland", flag: "🇨🇭" },
+  { name: "United Kingdom", flag: "🇬🇧" },
+
+  // NEW COUNTRIES
+  { name: "Greece", flag: "🇬🇷" },
+  { name: "Denmark", flag: "🇩🇰" },
+  { name: "France", flag: "🇫🇷" }
+];
 
   return (
     <section id="destinations" className="py-20 bg-[#0f1c3f] relative overflow-hidden">
@@ -73,7 +81,7 @@ export function DestinationsSection() {
 
           <div>
             <p className="text-4xl sm:text-5xl text-[#dc2626] mb-2 font-bold">
-              9+
+              15+
             </p>
             <p className="text-white text-lg">Countries</p>
           </div>
